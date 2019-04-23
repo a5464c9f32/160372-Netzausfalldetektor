@@ -1026,7 +1026,7 @@ GSMCMDResult_t GSM_Send_SMS_P( GSMSMSMESSAGE_t Msg ){
                             
                             switch( Bat.Batterystatus ){
                                 case VBAT_EMPTY:{
-                                      usart_putp(GSM_SMS_STATUS_P_LOW);
+                                      usart_putp(GSM_SMS_STATUS_P_EMPTY);
                                 } break;
                                 
                                 case VBAT_LOW:{
